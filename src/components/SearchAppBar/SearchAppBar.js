@@ -75,7 +75,7 @@ const PrimarySearchAppBar = ({ history }) => {
     <>
       <Drawer isOpen={open} toggleDrawer={toggleDrawer} />
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
+        <AppBar position="static" style={{ background: 'blueviolet' }}>
           <Toolbar>
           <MenuItem> 
             <IconButton
