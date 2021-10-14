@@ -13,7 +13,7 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import HomeIcon from '@mui/icons-material/Home';
 import Drawer from '../Drawer/Drawer'
 import { withRouter } from 'react-router-dom'
-import './SearchAppBar.css'
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
