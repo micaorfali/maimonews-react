@@ -9,15 +9,14 @@ import {
 
 import Home from '../../pages/Home'
 import Category from '../../pages/Category'
-
+import Search from '../../pages/Search'
 import SearchAppBar from '../SearchAppBar/SearchAppBar'
-
 
 function App() {
   return (
     <>
-      <SearchAppBar />
       <Router>
+        <SearchAppBar />
         <Switch>
           <Route exact path='/'>
             <Home />
@@ -25,9 +24,13 @@ function App() {
           <Route path='/category/:slug'>
             <Category />
           </Route>
+          <Route path='/search/:slug'>
+            <Search />
+          </Route>
           <Route path='*'>
             <p>Page not found</p>
           </Route>
+          
         </Switch>
       </Router>
 
